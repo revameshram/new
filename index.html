@@ -13,15 +13,50 @@
             background-position: center;   
             margin: 0;
         }
+        .container {
+    position: relative;
+    height: 100vh;
+    background-image: url("vscode_img.jpeg"); /* your image */
+    background-size: cover;
+    background-position: center;
+
+    .btn {
+    position: absolute;
+    left: 20px;      /* adjust to align with file names */
+    width: 200px;    /* width of clickable area */
+    height: 40px;    /* height per file row */
+    background: transparent;
+    cursor: pointer;
+    background: rgba(255,0,0,0.3);
+}
+}
     </style>
     
 </head>
 <body>
+     <div class="container">
+        <div class="btn" style="top: 150px;"></div>
+        <div class="btn" style="top: 200px;"></div>
+        <div class="btn" style="top: 250px;"></div>
+        <div class="btn" style="top: 300px;"></div>
+        <div class="btn" style="top: 350px;"></div>
+        <div class="btn" style="top: 400px;"></div>
+        <div class="btn" style="top: 450px;"></div>
+        <div class="btn" style="top: 500px;"></div>
+        <div class="btn" style="top: 550px;"></div>
+        <div class="btn" style="top: 600px;"></div>
+    </div>
+
     <script>
-document.addEventListener("click", function () {
-    document.documentElement.requestFullscreen();
-}, { once: true });
+        document.addEventListener("click", function () {
+            document.documentElement.requestFullscreen();
+            }, { once: true });
 
 </script>
+
+<a href="sample.pdf" target="_blank">
+    <button>Open PDF</button>
+</a>
+
 </body>
 </html>
